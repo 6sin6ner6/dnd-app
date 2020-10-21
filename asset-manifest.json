@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dnd-app/static/css/main.06244749.chunk.css",
+    "main.js": "/dnd-app/static/js/main.e47d7d04.chunk.js",
+    "main.js.map": "/dnd-app/static/js/main.e47d7d04.chunk.js.map",
+    "runtime-main.js": "/dnd-app/static/js/runtime-main.07a1bfbc.js",
+    "runtime-main.js.map": "/dnd-app/static/js/runtime-main.07a1bfbc.js.map",
+    "static/js/2.c77f4784.chunk.js": "/dnd-app/static/js/2.c77f4784.chunk.js",
+    "static/js/2.c77f4784.chunk.js.map": "/dnd-app/static/js/2.c77f4784.chunk.js.map",
+    "index.html": "/dnd-app/index.html",
+    "precache-manifest.93dd7d02e5ee5acca9b655af1df5b649.js": "/dnd-app/precache-manifest.93dd7d02e5ee5acca9b655af1df5b649.js",
+    "service-worker.js": "/dnd-app/service-worker.js",
+    "static/css/main.06244749.chunk.css.map": "/dnd-app/static/css/main.06244749.chunk.css.map",
+    "static/js/2.c77f4784.chunk.js.LICENSE.txt": "/dnd-app/static/js/2.c77f4784.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/dnd-app/static/media/scroll1.7d966046.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07a1bfbc.js",
+    "static/js/2.c77f4784.chunk.js",
+    "static/css/main.06244749.chunk.css",
+    "static/js/main.e47d7d04.chunk.js"
+  ]
+}
