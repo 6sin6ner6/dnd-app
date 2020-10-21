@@ -1,0 +1,293 @@
+/* STRONA GŁÓWNA */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  background-size: cover;
+  background-image: url("img/bg1.1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main-view__date,
+.main-view__raport {
+  position: absolute;
+  color: rgb(252, 224, 213);
+  font-size: 50px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 60px;
+  font-family: "Viaoda Libre", cursive, sans-serif;
+}
+.main-view__raport {
+  top: -20%;
+  font-size: 80px;
+}
+
+.btn-admin,
+.btn-raports {
+  position: absolute;
+  display: block;
+  transform: translate(-50%, 0);
+  border: 3px solid rgb(252, 224, 213);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(252, 224, 213);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 30px;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-admin {
+  top: 110%;
+  left: 50%;
+}
+.main-view .btn1:hover,
+.btn2:hover {
+  color: rgb(34, 73, 54);
+  background-color: rgb(252, 224, 213);
+}
+
+/* RAPORTY */
+
+.raport {
+  color: rgb(252, 224, 213);
+  font-size: 30px;
+  font-family: "Viaoda Libre", cursive, sans-serif;
+  width: 1200px;
+  margin: auto;
+  margin-top: 260px;
+  margin-bottom: -260px;
+  text-align: center;
+  cursor: pointer;
+  padding: 50px;
+  border-bottom: 1px solid rgb(252, 224, 213);
+  background-color: rgba(0, 0, 0, 0.575);
+  box-shadow: 15px 0 30px -1px rgba(0, 0, 0, 0.4),
+    -10px 0 30px 1px rgba(0, 0, 0, 0.4);
+}
+.raport:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+  position: fixed;
+  right: 50%;
+  top: 0;
+  transform: translate(50%);
+  background-image: url("img/scroll1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 100vh;
+  font-size: 24px;
+  margin: auto;
+  animation: show 1s linear;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.raport-content {
+  position: fixed;
+  height: 70%;
+  width: 50%;
+  top: 15%;
+  left: 51%;
+  white-space: pre-wrap;
+  text-align: justify;
+  transform: translate(-50%);
+  color: black;
+  font-family: "Marck Script", cursive;
+}
+
+.raport-btn {
+  position: fixed;
+  background: none;
+  border: none;
+  font-size: 25px;
+  top: 6%;
+  left: 73%;
+  cursor: pointer;
+}
+
+/* ADMIN */
+
+input,
+textarea {
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgb(252, 224, 213);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login {
+  top: 30%;
+  left: 50%;
+}
+
+textarea {
+  width: 930px;
+  height: 525px;
+  resize: none;
+}
+
+.btn-raports {
+  left: 50%;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: cover;
+  }
+  .main-view__date {
+    top: 40%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-view__raport {
+    top: -150px;
+    font-size: 30px;
+  }
+  .raport {
+    width: 100vw;
+  }
+  .raport-title {
+    font-size: 24px;
+  }
+  .popup-content {
+    background-image: url("img/scroll1.1.png");
+    width: 100%;
+    font-size: 9px;
+    top: 0;
+  }
+  .raport-content {
+    top: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .raport-btn {
+    font-size: 10px;
+    top: 145px;
+    left: 71%;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* STYLE NAVBAR */
+
+#App {
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  border-bottom: 1px solid white;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: rgb(252, 224, 213);
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  margin: 15px 20px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+  width: 3px !important;
+  height: 25px !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #000000;
+  padding: 2.5em 1.5em 0;
+  font-size: 30px;
+  font-family: "Viaoda Libre", cursive, sans-serif;
+  height: 50vh !important;
+  /* border: 2px dotted white; */
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  top: 0;
+  right: 0;
+}
+.bm-cross-button > span {
+  top: 2px !important;
+}
